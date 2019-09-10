@@ -2,7 +2,7 @@
 
 ## Description
 
-Generate unique image of robot/alien/monster according your name
+Generate unique image of robot/alien/monster according registered name
 
 <!-- **_DEMO:_**
 
