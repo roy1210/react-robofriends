@@ -26,7 +26,7 @@ $ npm start
 - Create-react-app cli
 - tachyons: CSS framework
 - Robohash API
-- JSONPlaceholder
+- JSONPlaceholder: Fetch the robots data
 - Redux
 
 ## Licence
