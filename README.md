@@ -27,7 +27,7 @@ $ npm start
 - tachyons: CSS framework
 - Robohash API
 - JSONPlaceholder: Fetch the robots data
-- Redux
+- Redux, React-redux, Redux-logger
 
 ## Licence
 
