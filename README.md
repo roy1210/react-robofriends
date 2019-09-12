@@ -2,11 +2,11 @@
 
 ## Description
 
-Generate unique image of robot/alien/monster according registered name
+Generate unique image of robot/alien/monster according registered name and fetch with redux action
 
-<!-- **_DEMO:_**
+**_DEMO:_**
 
-<img src="./src/img/ReactProjects/190713ScreenShot.jpg" width="80%"> -->
+<img src="./src/img/190912Robofriends.jpg" width="80%">
 
 ## Usage / Install
 
