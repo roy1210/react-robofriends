@@ -28,6 +28,7 @@ $ npm start
 - Robohash API
 - JSONPlaceholder: Fetch the robots data
 - Redux, React-redux, Redux-logger
+- Redux-thunk: handle asynchronous action in redux (returns function instead of object in action)
 
 ## Licence
 

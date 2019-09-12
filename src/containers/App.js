@@ -6,32 +6,21 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
 import ErrorBoundry from '../components/ErrorBoundry';
-import { setSearchField } from '../actions';
+import { setSearchField, requestRobots } from '../actions';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      robots: []
-    };
-  }
-
   // no need to use arrow function to bind due to react function
   componentDidMount() {
-    console.log(this.props.store);
-    fetch('http://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(robot => this.setState({ robots: robot }));
+    this.props.onRequestRobots();
   }
 
   render() {
-    const { robots } = this.state;
-    const { searchField, onSearchChange } = this.props;
+    const { searchField, onSearchChange, robots, isPending } = this.props;
     const filteredRobots = robots.filter(robot => {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     });
 
-    if (!robots.length) {
+    if (isPending) {
       return <h1>Loading</h1>;
     } else {
       return (
@@ -52,13 +41,18 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    searchField: state.searchField
+    searchField: state.searchRobots.searchField,
+    robots: state.requestRobots.robots,
+    isPending: state.requestRobots.isPending,
+    error: state.requestRobots.error
   };
 };
 const mapDispatchToProps = dispatch => {
   return {
-    // onSearchChange -> take as props to pass
-    onSearchChange: event => dispatch(setSearchField(event.target.value))
+    // XXXX: -> take as props to pass
+    onSearchChange: event => dispatch(setSearchField(event.target.value)),
+    // return function
+    onRequestRobots: () => dispatch(requestRobots())
   };
 };
 
