@@ -24,7 +24,7 @@ $ npm start
 ## Tools
 
 - Create-react-app cli
-- tachyons: CSS framework
+- Tachyons: CSS framework
 - Robohash API
 - JSONPlaceholder: Fetch the robots data
 - Redux, React-redux, Redux-logger
