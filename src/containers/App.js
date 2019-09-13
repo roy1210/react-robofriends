@@ -7,6 +7,7 @@ import Scroll from '../components/Scroll';
 import './App.css';
 import ErrorBoundry from '../components/ErrorBoundry';
 import { setSearchField, requestRobots } from '../actions';
+import Header from '../components/Header';
 
 class App extends Component {
   // no need to use arrow function to bind due to react function
@@ -25,7 +26,7 @@ class App extends Component {
     } else {
       return (
         <div className='tc'>
-          <h1 className='f2'>RoboFriends</h1>
+          <Header />
           <SearchBox searchChange={onSearchChange} />
           <Scroll>
             <ErrorBoundry>
