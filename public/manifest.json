@@ -7,7 +7,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -17,7 +17,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
