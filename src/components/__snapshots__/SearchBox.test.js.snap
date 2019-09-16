@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SearchBox without crashing 1`] = `
+"<div className=\\"pa2\\">
+  <input aria-label=\\"Search Robot\\" className=\\"pa3 ba b--green bg-lightest-blue\\" type=\\"search\\" placeholder=\\"search robots\\" value=\\"Leanne\\" onChange={[undefined]} />
+</div>"
+`;
